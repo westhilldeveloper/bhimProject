@@ -6,34 +6,32 @@ export default function OngoingProjects() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const project1 = {
-    title: 'Samakhiali–Gandhidham Tollways Ltd. (L&T IDPL)',
-    description1: 'We are currently providing 110 manpower personnel for this ongoing project in Samakhiali, Gujarat since January 2017. The workforce supports toll and infrastructure operations.',
-    description2: 'Our long-term involvement highlights our reliability and consistent performance. We continue to ensure smooth operations and high service standards.',
+    title: 'NCC – Commercial Buildings (Gurugram, Haryana)',
+    description1: 'We are currently providing construction manpower for NCC’s commercial building project located in Sector-43, Gurugram, Haryana. Our workforce is actively involved in supporting various construction activities, ensuring that operations run smoothly and efficiently on-site.',
+    description2: 'Our team focuses on maintaining discipline, safety, and productivity throughout the project. By deploying trained manpower aligned with project requirements, we help NCC achieve timely progress and maintain high construction standards.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    logo:'/images/cmp_logo/NCC_Ltd.png'
+    
   };
 
   const project2 = {
-    title: 'Shree Jagannath Expressway Pvt. Ltd. (MAPLE)',
-    description1: 'This ongoing project in Cuttack, Odisha involves deploying 80 manpower resources since July 2022.',
-    description2: 'Our team ensures efficient operations and maintains productivity. We continue to support the project with dedication and professionalism.',
+    title: 'Suryapriya Constructions – Building Projects (Bengaluru, Karnataka)',
+    description1: 'For Suryapriya Constructions, we are supplying industrial construction manpower at Brigade Signature Towers, located on Old Madras Road, Kattamnallur, Sannatammanahalli, Bengaluru. Our workforce supports a wide range of construction operations across this large-scale project.',
+    description2: 'We ensure that all personnel are well-trained and capable of handling site responsibilities efficiently. Our consistent manpower supply helps maintain workflow continuity and contributes to the successful execution of the project.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    logo:'/images/cmp_logo/Suryapriya.png'
   };
 
   const project3 = {
-    title: 'NCR Eastern Peripheral Expressway Pvt. Ltd. (MAPLE)',
-    description1: 'We are managing a large workforce of 567 personnel across 9 toll plazas in Haryana and Uttar Pradesh since November 2022.',
-    description2: 'This project showcases our capability to handle large-scale manpower deployment. We ensure coordination, efficiency, and uninterrupted operations across all locations.',
+    title: 'KEC International – Brigade Calista Projects (Bengaluru, Karnataka)',
+    description1: 'We are currently working with KEC International by providing construction manpower for the Brigade Calista project located in Cheemasandra, Bengaluru, Karnataka. Our team plays a key role in supporting daily construction operations.',
+    description2: 'With a focus on quality and efficiency, we ensure that our workforce meets the demands of the project. Our involvement helps streamline operations, maintain productivity, and support the client in achieving project milestones effectively.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    logo:'/images/cmp_logo/KEC_Int.png'
   };
 
-  const project4 = {
-    title: 'Shagun Farms (BTTS)',
-    description1: 'We are providing 50 manpower personnel for this project in Chattarpur, New Delhi since March 2012.',
-    description2: 'Our long-term association reflects trust and consistent service quality. We continue to support operations with reliability and efficiency.',
-    points: ['Project Management', 'Candidate Management', 'Interview Management'],
-  };
-
-  const slides = [project1, project2, project3, project4];
+ 
+  const slides = [project1, project2, project3];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -104,7 +102,11 @@ export default function OngoingProjects() {
 
                         {/* Logo container - responsive width */}
                         <div className="flex h-[72px] w-full max-w-[267px] items-center justify-center rounded-[6px] bg-[#f1f1f1] text-[10px] text-[#7c7c7c] md:h-[82px]">
-                          Company logo
+                        <img
+    src={slide.logo}
+    alt="ongoing project"
+    className="h-full w-full object-fit"
+  />
                         </div>
                       </div>
                     </div>

@@ -12,48 +12,56 @@ export default function ProjectDetails() {
     description:
       'We focused on efficient manpower deployment, ensuring productivity and safety across all operations. Our ability to manage a high-volume workforce helped the client maintain operational efficiency and meet project timelines successfully.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    logo:'/images/cmp_logo/Disposafe.jfif'
   };
   const project2 = {
     title:'Kundli–Manesar Expressway Ltd. (PIIPL)',
      subtitle:'We provided 40 skilled manpower resources for this expressway project in Haryana between November 2018 and May 2020. The workforce supported construction and operational tasks with precision and consistency.',
      description:'Our team ensured smooth execution by maintaining discipline and efficiency. This project strengthened our expertise in handling expressway infrastructure projects with professionalism.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
+     logo:''
   };
   const project3 = {
     title:'Kundli–Manesar Expressway Ltd. (Essel Infra)',
      subtitle:'For Essel Infra, we deployed 50 manpower resources from March 2021 to July 2023 in Haryana. The project required continuous support for construction and operational activities.',
      description:'We ensured that the workforce was well-trained and aligned with project requirements. Our contribution helped maintain workflow continuity and improved overall productivity.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
+     logo:'/images/cmp_logo/essel.jfif'
   };
   const project4 = {
     title:'Chikhli–Tarsod Highway Project Ltd. (Welspun)',
      subtitle:'This project in Bhusawal, Maharashtra involved deploying 40 manpower personnel from May 2021 to July 2023. Our team supported construction operations with dedication and efficiency.',
      description:'We maintained high standards of safety and work quality throughout the project. Our consistent performance ensured timely completion and client satisfaction.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
+     logo:''
   }
   const project5 = {
     title:'Vadodara–Bharuch Tollways Ltd. (L&T IDPL)',
      subtitle:'We provided a workforce of 150 personnel for this major tollway project in Karjan, Gujarat from May 2021 to July 2023. The project required large-scale manpower management and coordination.',
      description:'Our team ensured seamless operations by maintaining discipline and efficiency. This project showcased our capability to handle high manpower requirements in critical infrastructure.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
+     logo:'/images/cmp_logo/L&T.png'
   }
   const project6 = {
     title:'Vadodara–Bharuch Tollways Ltd. (Ajay Ayush)',
      subtitle:'For this project, we deployed 150 manpower resources from July 2020 to March 2022 in Karjan, Gujarat. Our workforce supported construction and operational needs effectively.',
      description:'We ensured proper workforce management and timely execution of tasks. Our performance contributed to smooth project progress and client satisfaction.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
+     logo:''
   }
   const project7 = {
-    title:'. PinkCity Expressway Pvt. Ltd. (Shahjahanpur Toll)',
+    title:'PinkCity Expressway Pvt. Ltd. (Shahjahanpur Toll)',
      subtitle:'We provided 150 manpower personnel for this project in Rajasthan from April 2012 to April 2018. The project involved long-term support for toll operations and infrastructure.',
      description:'Our team ensured consistent performance over the years. This long-term engagement highlights our reliability and commitment to client success.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
+     logo:'/images/cmp_logo/PinkCity.jfif'
   }
 const project8 = {
   title: 'PinkCity Expressway Pvt. Ltd. (Manoharpur Toll)',
   subtitle: 'This project involved deploying 80 manpower resources from April 2009 to July 2010 in Rajasthan. Our team supported toll operations efficiently.',
   description: 'We maintained quality service and ensured smooth daily operations. Our contribution helped the client achieve operational stability.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:'/images/cmp_logo/PinkCity.jfif'
 };
 
 const project9 = {
@@ -61,6 +69,7 @@ const project9 = {
   subtitle: 'We deployed 30 manpower personnel for this toll project in Rajasthan. Our team handled operational tasks with precision and efficiency.',
   description: 'Despite the smaller workforce, we ensured high-quality service delivery. This project reflects our flexibility in handling projects of all sizes.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:'/images/cmp_logo/PinkCity.jfif'
 };
 
 const project10 = {
@@ -68,6 +77,7 @@ const project10 = {
   subtitle: 'We provided 100 manpower resources for this project in Madhya Pradesh from April 2018 to October 2019. The workforce supported construction and toll operations.',
   description: 'Our team ensured smooth execution and maintained productivity throughout the project. We delivered reliable manpower solutions tailored to project needs.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:'/images/cmp_logo/essel.jfif'
 };
 
 const project11 = {
@@ -75,6 +85,7 @@ const project11 = {
   subtitle: 'For this project in Rajasthan, we deployed 109 manpower personnel from May 2022 to November 2022. The project required efficient toll management and operational support.',
   description: 'We ensured timely deployment and effective workforce management. Our contribution helped maintain uninterrupted operations.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:''
 };
 
 const project12 = {
@@ -82,6 +93,7 @@ const project12 = {
   subtitle: 'This project in Madhya Pradesh involved providing 109 manpower resources from September 2022 to December 2022. Our team supported toll operations efficiently.',
   description: 'We focused on maintaining discipline and operational accuracy. Our workforce ensured smooth day-to-day functioning.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:''
 };
 
 const project13 = {
@@ -89,6 +101,7 @@ const project13 = {
   subtitle: 'We deployed 109 manpower personnel for this project in Madhya Pradesh from January 2019 to September 2019. The workforce handled toll operations and support tasks.',
   description: 'Our team ensured consistent service delivery and operational efficiency. This project further strengthened our presence in highway infrastructure.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:''
 };
 
 const project14 = {
@@ -96,6 +109,7 @@ const project14 = {
   subtitle: 'This project in Maharashtra required 135 manpower personnel from January 2020 to November 2020. Our team supported operations at multiple check posts.',
   description: 'We ensured coordination and efficiency across all locations. Our ability to manage multiple sites simultaneously was key to project success.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:''
 };
 
 const project15 = {
@@ -103,6 +117,7 @@ const project15 = {
   subtitle: 'We provided 50 manpower resources across multiple locations including UP, Rajasthan, and Himachal Pradesh from April 2009 to September 2020.',
   description: 'Our team handled diverse construction requirements across regions. This project highlights our capability to manage geographically spread operations.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:'/images/cmp_logo/KMC.png'
 };
 
 const project16 = {
@@ -110,6 +125,7 @@ const project16 = {
   subtitle: 'This project involved deploying 20 manpower personnel in Delhi from October 2019 to December 2020. Our workforce supported construction and maintenance activities.',
   description: 'We ensured quality work and timely execution. Our services contributed to the smooth completion of the project.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:''
 };
 
 const project17 = {
@@ -117,6 +133,7 @@ const project17 = {
   subtitle: 'We provided 40 manpower resources for this infrastructure project in Delhi from February 2022 to March 2023.',
   description: 'Our team ensured efficient operations and maintained project timelines. This project reflects our expertise in urban infrastructure support.',
   points: ['Project Management', 'Candidate Management', 'Interview Management'],
+  logo:''
 };
   const slides = [singleSlide, project2, project3,  project4,  project5,  project6,  project7,project8, project9, project10, project11, project12, project13, project14, project15, project16, project17 ];
 
@@ -176,9 +193,13 @@ const project17 = {
                       ))}
                     </ul>
 
-                    <div className="flex h-[72px] w-[170px] items-center justify-center rounded-[6px] bg-[#ececec] text-[11px] text-[#7a7a7a] md:h-[84px] md:w-[200px]">
-                      Company logo
-                    </div>
+                  {slide.logo &&   <div className="flex h-[72px] w-[170px] items-center justify-center rounded-[6px] bg-[#ececec] text-[11px] text-[#7a7a7a] md:h-[84px] md:w-[200px]">
+                     <img
+    src={slide.logo}
+    alt="ongoing project"
+    className="h-full w-full object-fit"
+  />
+                    </div>}
                   </div>
                 </div>
 
