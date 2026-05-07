@@ -44,9 +44,9 @@ export default function AboutPage() {
       <p>
         I strongly believe that success comes from empowering individuals and creating opportunities for growth. Whether it is supporting businesses with skilled manpower or helping individuals find meaningful employment, our goal has always been to contribute positively to society. As we continue to grow, we remain focused on delivering excellence, nurturing long-term relationships, and upholding the trust our clients place in us every day.
       </p>
-      <p>
+      {/* <p>
         __________, Founder
-      </p>
+      </p> */}
 
       <h3 className="text-xl font-semibold text-[#1a1a1a] mt-6">
         Why Choose Us

@@ -10,6 +10,7 @@ export default function OngoingProjects() {
     description1: 'We are currently providing construction manpower for NCC’s commercial building project located in Sector-43, Gurugram, Haryana. Our workforce is actively involved in supporting various construction activities, ensuring that operations run smoothly and efficiently on-site.',
     description2: 'Our team focuses on maintaining discipline, safety, and productivity throughout the project. By deploying trained manpower aligned with project requirements, we help NCC achieve timely progress and maintain high construction standards.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    image:'/images/project/proj1.jpeg',
     logo:'/images/cmp_logo/NCC_Ltd.png'
     
   };
@@ -19,6 +20,7 @@ export default function OngoingProjects() {
     description1: 'For Suryapriya Constructions, we are supplying industrial construction manpower at Brigade Signature Towers, located on Old Madras Road, Kattamnallur, Sannatammanahalli, Bengaluru. Our workforce supports a wide range of construction operations across this large-scale project.',
     description2: 'We ensure that all personnel are well-trained and capable of handling site responsibilities efficiently. Our consistent manpower supply helps maintain workflow continuity and contributes to the successful execution of the project.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    image:'/images/project/proj2.jpeg',
     logo:'/images/cmp_logo/Suryapriya.png'
   };
 
@@ -27,6 +29,7 @@ export default function OngoingProjects() {
     description1: 'We are currently working with KEC International by providing construction manpower for the Brigade Calista project located in Cheemasandra, Bengaluru, Karnataka. Our team plays a key role in supporting daily construction operations.',
     description2: 'With a focus on quality and efficiency, we ensure that our workforce meets the demands of the project. Our involvement helps streamline operations, maintain productivity, and support the client in achieving project milestones effectively.',
     points: ['Project Management', 'Candidate Management', 'Interview Management'],
+    image:'/images/project/bidge3.jpg',
     logo:'/images/cmp_logo/KEC_Int.png'
   };
 
@@ -64,9 +67,9 @@ export default function OngoingProjects() {
                     {/* Image - full width on mobile, fixed width on desktop */}
                     <div className="flex h-[180px] w-full items-center justify-center overflow-hidden rounded-[14px] bg-[#f7f7f7] md:h-[220px] md:w-full lg:h-[320px] lg:w-[312px]">
   <img
-    src="/images/serv_1.png"
+    src={slide.image}
     alt="ongoing project"
-    className="h-full w-full object-cover"
+    className="h-full w-full object-fill"
   />
 </div>
 
@@ -105,7 +108,7 @@ export default function OngoingProjects() {
                         <img
     src={slide.logo}
     alt="ongoing project"
-    className="h-full w-full object-fit"
+    className="h-full w-full object-fill"
   />
                         </div>
                       </div>

@@ -72,7 +72,7 @@ children)
             Read More →
           </button></Link>)}
 
-          <div className="mt-10 grid grid-cols-1 gap-6 text-center sm:mt-12 sm:grid-cols-3 lg:mt-24 lg:max-w-[75%]">
+          {/* <div className="mt-10 grid grid-cols-1 gap-6 text-center sm:mt-12 sm:grid-cols-3 lg:mt-24 lg:max-w-[75%]">
             {stats.map((item, index) => (
               <div key={index}>
                 <div className="text-4xl font-semibold leading-none text-[#3a3a3a] sm:text-5xl lg:text-[48px]">
@@ -83,7 +83,7 @@ children)
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
