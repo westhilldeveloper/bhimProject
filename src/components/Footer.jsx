@@ -2,12 +2,16 @@ import { navItems } from '@/data';
 import Link from 'next/link';
 
 export default function Footer() {
+  // Helper to convert nav item name to href (same logic as Header)
+  const getHref = (item) => {
+    return item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`;
+  };
+
   return (
     <footer className="bg-[#5a4338] text-white">
       <div className="grid gap-10 px-4 py-10 sm:px-6 md:px-10 lg:grid-cols-[0.9fr_1.1fr_0.9fr] lg:px-12 lg:py-12">
-        {/* LEFT COLUMN: Logo + Contact details (below logo) */}
+        {/* LEFT COLUMN: Logo + Contact details */}
         <div>
-          {/* Logo */}
           <div className="flex h-[120px] w-[120px] items-center justify-center rounded-2xl bg-white shadow-sm sm:h-[140px] sm:w-[140px] lg:h-[156px] lg:w-[156px]">
             <img
               src="/images/logo.jpg"
@@ -16,8 +20,7 @@ export default function Footer() {
             />
           </div>
 
-          {/* Contact details – directly below logo */}
-          <div className="mt-6 max-w-full space-y-3 text-[#f1e9df] sm:mt-8 lg:max-w-[75%]">
+          <div className="mt-6 max-w-full space-y-3 text-[#f1e9df] sm:mt-18 lg:max-w-[75%]">
             <div className="flex items-start gap-2 text-[14px] sm:text-[15px] lg:text-[16px]">
               <span className="mt-1 shrink-0">
                 <img src="/images/icons/phn.png" alt="phone" className="h-4 w-4" />
@@ -41,23 +44,27 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* CENTER COLUMN: Quick Links */}
+        {/* CENTER COLUMN: Quick Links (now clickable) */}
         <div>
           <h3 className="text-[24px] font-semibold sm:text-[28px] lg:text-[32px]">
             Quick Links
           </h3>
-          <div className="mt-2 h-1 w-16 bg-[#d8d2cb]" />
+          <div className="mt-2 h-1 w-26 bg-[#d8d2cb]" />
           <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-4 text-[15px] text-[#f7f2eb] sm:gap-x-10 sm:text-[16px] lg:text-[18px]">
             {navItems.map((item) => (
-              <div key={item} className="flex items-center gap-3">
+              <Link
+                key={item}
+                href={getHref(item)}
+                className="flex items-center gap-3 hover:underline"
+              >
                 <span>»</span>
                 <span>{item}</span>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Social Icons only */}
+        {/* RIGHT COLUMN: Social Icons */}
         <div>
           <div className="text-[14px] font-semibold uppercase tracking-wide text-[#f3ece3] sm:text-[15px] lg:text-[16px]">
             Follow Us On
