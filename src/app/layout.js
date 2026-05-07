@@ -6,6 +6,11 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'Bhim Group Construction',
   description: 'Construction company website',
+   icons: {
+    icon: '/images/logo1.png',   
+    shortcut: '/images/logo1.png',
+    apple: '/images/logo1.png',
+  },
 };
 
 export default function RootLayout({ children }) {
