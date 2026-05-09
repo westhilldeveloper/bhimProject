@@ -43,11 +43,24 @@ export default function AboutPage() {
         Choosing Bhim Secure Solutions means partnering with a company that values reliability, quality, and long-term relationships. With over a decade of industry experience since 2009, we understand the importance of delivering the right people for the right job. Our focus is not just on providing manpower, but on delivering dependable solutions that enhance efficiency, reduce operational stress, and support your business growth with professionalism and trust.
       </p>
       
-        <h1 className="text-md font-semibold text-[#1a1a1a]">Experienced & Trusted Since 2009</h1> <p> With years of proven experience, we have developed a deep understanding of various industries and their workforce requirements. Our long-standing presence reflects our commitment to consistency, reliability, and client satisfaction.</p>
-        <h1 className="text-md font-semibold text-[#1a1a1a]">Skilled & Verified Workforce</h1> <p> We ensure that every individual we deploy is properly trained, verified, and aligned with job requirements. This helps maintain high standards of service quality and ensures smooth operations for our clients.</p>
-        <h1 className="text-md font-semibold text-[#1a1a1a]">Comprehensive Service Offering</h1> <p> From housekeeping and security to construction labour and healthcare support, we provide a wide range of services under one roof. This makes us a one-stop solution for all your manpower and facility needs.</p>
-        <h1 className="text-md font-semibold text-[#1a1a1a]">Client-Centric Approach</h1> <p> We prioritize our clients’ needs and tailor our services accordingly. Our team works closely with you to understand your requirements and deliver solutions that are efficient, flexible, and result-driven.</p>
-      
+      <ul className="space-y-4">
+  <li>
+    <span className="text-md font-semibold text-[#1a1a1a]">• Experienced & Trusted Since 2009</span>
+    <p>With years of proven experience, we have developed a deep understanding of various industries and their workforce requirements. Our long-standing presence reflects our commitment to consistency, reliability, and client satisfaction.</p>
+  </li>
+  <li>
+    <span className="text-md font-semibold text-[#1a1a1a]">• Skilled & Verified Workforce</span>
+    <p>We ensure that every individual we deploy is properly trained, verified, and aligned with job requirements. This helps maintain high standards of service quality and ensures smooth operations for our clients.</p>
+  </li>
+  <li>
+    <span className="text-md font-semibold text-[#1a1a1a]">• Comprehensive Service Offering</span>
+    <p>From housekeeping and security to construction labour and healthcare support, we provide a wide range of services under one roof. This makes us a one-stop solution for all your manpower and facility needs.</p>
+  </li>
+  <li>
+    <span className="text-md font-semibold text-[#1a1a1a]">• Client-Centric Approach</span>
+    <p>We prioritize our clients’ needs and tailor our services accordingly. Our team works closely with you to understand your requirements and deliver solutions that are efficient, flexible, and result-driven.</p>
+  </li>
+</ul>
         </About>
 
    <LeadershipPage/>
