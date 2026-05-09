@@ -123,7 +123,7 @@ export default function ServiceDetailsPage() {
       {service.description}
     </p>
 
-    <ul className="mt-5 space-y-2">
+    {/* <ul className="mt-5 space-y-2">
       {service.points.map((point) => (
         <li
           key={point}
@@ -133,7 +133,7 @@ export default function ServiceDetailsPage() {
           <span>{point}</span>
         </li>
       ))}
-    </ul>
+    </ul> */}
   </div>
 </div>
             );

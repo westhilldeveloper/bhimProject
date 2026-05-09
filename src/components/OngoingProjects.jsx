@@ -104,11 +104,11 @@ export default function OngoingProjects() {
                         </ul>
 
                         {/* Logo container - responsive width */}
-                        <div className="flex h-[72px] w-full max-w-[267px] items-center justify-center rounded-[6px] bg-[#f1f1f1] text-[10px] text-[#7c7c7c] md:h-[82px]">
+                        <div className="flex h-[72px] w-full max-w-[167px] items-center justify-center rounded-[6px] bg-[#f1f1f1] text-[10px] text-[#7c7c7c] md:h-[82px]">
                         <img
     src={slide.logo}
     alt="ongoing project"
-    className="h-full w-full object-fill"
+    className="h-full w-full "
   />
                         </div>
                       </div>

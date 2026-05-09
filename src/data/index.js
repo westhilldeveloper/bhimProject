@@ -54,7 +54,7 @@ const servicesData = [
       description: "We provide professional housekeeping staff to maintain cleanliness, hygiene, and a well-organized environment in corporate spaces, ensuring a positive and productive workplace for employees and visitors."
     },
     {
-      image: "/images/service/C2.png",
+      image: "/images/service/c2.png",
       title: "Construction Manpower / Labour Supply",
       description: "Our skilled and unskilled workforce supports construction projects of all sizes, helping ensure timely completion, operational efficiency, and adherence to industry standards."
     },

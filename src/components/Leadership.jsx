@@ -16,16 +16,6 @@ export default function Leadership({ slides = [] }) {
   const getMemberDetails = (service, idx) => {
     if (idx === 0) {
       return {
-        name: 'Kamal Basumatari',
-        designation: `General Manager – Head of Sales & Operations\nVertical: Facility Management & Construction`,
-        paragraphs: [
-          "“At Bhim Secure Solutions, our goal has always been to deliver dependable manpower and facility management services that create real value for our clients. We understand that every project requires not only skilled manpower but also commitment, discipline, and operational excellence. Our team works tirelessly to ensure that we meet the expectations of our clients while maintaining the highest standards of professionalism and service quality.”",
-          "“With years of experience in the facility management and construction sector, we have built a strong foundation based on trust, consistency, and long-term partnerships. We believe in understanding the unique requirements of every client and providing customized solutions that support smooth operations and project success. Our focus remains on continuous improvement, workforce development, and maintaining operational efficiency across every assignment we undertake.”",
-          "“As we continue to grow, our commitment remains unchanged, to provide reliable services, strengthen client relationships, and contribute to the success of every project we are associated with. We are proud of the trust our clients place in us and remain dedicated to delivering excellence through teamwork, innovation, and a customer-first approach.”"
-        ]
-      };
-    } else {
-      return {
         name: 'Colonel Ram Niwas (Retd.)',
         designation: 'General Manager – Office Administration & Operations',
         paragraphs: [
@@ -34,6 +24,16 @@ export default function Leadership({ slides = [] }) {
           "“As we move forward, we remain dedicated to strengthening our services and maintaining the trust of our clients through consistency and commitment. We take pride in supporting businesses with dependable manpower solutions and look forward to contributing to many more successful projects in the years ahead.”"
         ]
       };
+    } else {
+     return {
+        name: 'Kamal Basumatari',
+        designation: `General Manager – Head of Sales & Operations\nVertical: Facility Management & Construction`,
+        paragraphs: [
+          "“At Bhim Secure Solutions, our goal has always been to deliver dependable manpower and facility management services that create real value for our clients. We understand that every project requires not only skilled manpower but also commitment, discipline, and operational excellence. Our team works tirelessly to ensure that we meet the expectations of our clients while maintaining the highest standards of professionalism and service quality.”",
+          "“With years of experience in the facility management and construction sector, we have built a strong foundation based on trust, consistency, and long-term partnerships. We believe in understanding the unique requirements of every client and providing customized solutions that support smooth operations and project success. Our focus remains on continuous improvement, workforce development, and maintaining operational efficiency across every assignment we undertake.”",
+          "“As we continue to grow, our commitment remains unchanged, to provide reliable services, strengthen client relationships, and contribute to the success of every project we are associated with. We are proud of the trust our clients place in us and remain dedicated to delivering excellence through teamwork, innovation, and a customer-first approach.”"
+        ]
+      }; 
     }
   };
 

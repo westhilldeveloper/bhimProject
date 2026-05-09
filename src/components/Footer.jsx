@@ -71,9 +71,10 @@ export default function Footer() {
           </div>
           <div className="mt-4 flex gap-4">
             {[
-              { src: '/images/icons/subtract.png', href: 'https://in.linkedin.com/company/bhimsecuresolutions', alt: 'LinkedIn' },
+              { src: '/images/icons/Subtract.png', href: 'https://in.linkedin.com/company/bhimsecuresolutions', alt: 'LinkedIn' },
               { src: '/images/icons/insta.png', href: 'https://www.instagram.com/bhimsecure/', alt: 'Instagram' },
               { src: '/images/icons/fb.png', href: 'https://www.facebook.com/profile.php?id=61586873501701', alt: 'Facebook' },
+              { src: '/images/icons/youtube.png', href: 'https://www.facebook.com/profile.php?id=61586873501701', alt: 'Facebook' },
             ].map((item) => (
               <a
                 key={item.src}

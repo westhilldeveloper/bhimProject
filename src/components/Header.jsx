@@ -116,7 +116,7 @@ export default function Header() {
             <span>
               <img src="/images/icon_phn.png" className="h-4 w-auto object-contain" alt="phone" />
             </span>
-            +91 9540 999 909
+            011-47083993
           </div>
 
           <button onClick={toggleMobileMenu} className="block lg:hidden focus:outline-none" aria-label="Menu">

@@ -28,19 +28,7 @@ export default function AboutPage() {
       <p>Understanding the importance of care and assistance in both corporate and personal environments, we also offer Nursing Assistants and Doctor Attendants. Our healthcare support staff is carefully selected and trained to provide compassionate and professional assistance, ensuring comfort, safety, and well-being. Whether it’s for healthcare facilities or individual needs, we bring a human touch to every service we provide.</p>
       <p>At Bhim Secure Solutions, our mission is to empower businesses with reliable manpower solutions while maintaining the highest standards of integrity and service quality. Over the years, we have earned the trust of our clients through consistency, transparency, and a customer-first approach. As we continue to grow, we remain committed to delivering value-driven services that create lasting partnerships and drive success for our clients.</p>
 
-      <h3 className="text-xl font-semibold text-[#1a1a1a] mt-6">
-        Leadership
-      </h3>
-      <p>
-       Our leadership at Bhim Secure Solutions is driven by vision, experience, and a deep commitment to excellence. With years of industry expertise since our incorporation in 2009, our leadership team focuses on building strong client relationships, maintaining high service standards, and continuously improving our operations. They believe in empowering people, fostering accountability, and creating a culture of trust and professionalism. Through strategic planning and hands-on involvement, our leaders ensure that every service we deliver reflects quality, reliability, and our core values of integrity and customer satisfaction.
-      </p>
-
-      <h3 className="text-xl font-semibold text-[#1a1a1a] mt-6">
-        Founder's Message
-      </h3>
-      <p>
-        At Bhim Secure Solutions, our journey began with a simple vision: to provide reliable, professional, and trustworthy manpower solutions that truly make a difference in people’s lives and businesses. Since our establishment on 9th July 2009, we have remained committed to building a company that stands on the pillars of integrity, quality, and dedication. Every service we offer is a reflection of our belief that the right people and the right approach can transform operations and create lasting value.
-      </p>
+     
       <p>
         I strongly believe that success comes from empowering individuals and creating opportunities for growth. Whether it is supporting businesses with skilled manpower or helping individuals find meaningful employment, our goal has always been to contribute positively to society. As we continue to grow, we remain focused on delivering excellence, nurturing long-term relationships, and upholding the trust our clients place in us every day.
       </p>

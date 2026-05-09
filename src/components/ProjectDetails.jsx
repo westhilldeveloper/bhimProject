@@ -248,7 +248,7 @@ const project17 = {
                   </div>
 
                   <div className="flex flex-col items-start gap-5 lg:items-start">
-                    <ul className="space-y-2 pt-1">
+                    {/* <ul className="space-y-2 pt-1">
                       {slide.points.map((point) => (
                         <li
                           key={point}
@@ -260,7 +260,7 @@ const project17 = {
                           <span className='text-[16px]'>{point}</span>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
 
                   {slide.logo &&   <div className="flex h-[72px] w-[170px] items-center justify-center rounded-[6px] bg-[#ececec] text-[11px] text-[#7a7a7a] md:h-[84px] md:w-[200px]">
                      <img
