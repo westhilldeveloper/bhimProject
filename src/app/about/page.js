@@ -4,6 +4,7 @@ import LeadershipPage from '@/components/LeadershipPage';
 import Process from '@/components/Process';
 import Services from '@/components/Services';
 import TeamMembers from '@/components/TeamMembers';
+import Whychoose from '@/components/Whychoose';
 
 export default function AboutPage() {
   
@@ -29,14 +30,10 @@ export default function AboutPage() {
       <p>At Bhim Secure Solutions, our mission is to empower businesses with reliable manpower solutions while maintaining the highest standards of integrity and service quality. Over the years, we have earned the trust of our clients through consistency, transparency, and a customer-first approach. As we continue to grow, we remain committed to delivering value-driven services that create lasting partnerships and drive success for our clients.</p>
 
      
-      <p>
-        I strongly believe that success comes from empowering individuals and creating opportunities for growth. Whether it is supporting businesses with skilled manpower or helping individuals find meaningful employment, our goal has always been to contribute positively to society. As we continue to grow, we remain focused on delivering excellence, nurturing long-term relationships, and upholding the trust our clients place in us every day.
-      </p>
-      {/* <p>
-        __________, Founder
-      </p> */}
+     
+      
 
-      <h3 className="text-xl font-semibold text-[#1a1a1a] mt-6">
+      {/* <h3 className="text-xl font-semibold text-[#1a1a1a] mt-6">
         Why Choose Us
       </h3>
       <p>
@@ -60,13 +57,13 @@ export default function AboutPage() {
     <span className="text-md font-semibold text-[#1a1a1a]">• Client-Centric Approach</span>
     <p>We prioritize our clients’ needs and tailor our services accordingly. Our team works closely with you to understand your requirements and deliver solutions that are efficient, flexible, and result-driven.</p>
   </li>
-</ul>
+</ul> */}
         </About>
 
    <LeadershipPage/>
       <TeamMembers />
       <ImageStrip />
-      <Process />
+      <Whychoose/>
     </>
   );
 }

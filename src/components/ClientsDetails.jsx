@@ -1,25 +1,15 @@
 export default function ClientsDetails() {
   const clients = [
-    "/images/cmp_logo/urc.png",
-    "/images/cmp_logo/larsen.png",
-    "/images/cmp_logo/adani.png",
-    "/images/cmp_logo/group.png",
-    "/images/cmp_logo/mfar.png",
-    "/images/cmp_logo/nrc.png",
-    "/images/cmp_logo/apco.png",
-    "/images/cmp_logo/sjcont.png",
-    "/images/cmp_logo/shreeji.png",
-    "/images/cmp_logo/cmk.png",
-    "/images/cmp_logo/sp.png",
-    "/images/cmp_logo/harihrn.png",
-    "/images/cmp_logo/psp.png",
-    "/images/cmp_logo/pnc.png",
-    "/images/cmp_logo/shree.png",
-    "/images/cmp_logo/jmc.png",
-    "/images/cmp_logo/kpassos.png",
-    "/images/cmp_logo/uniqcore.png",
-    "/images/cmp_logo/sathlok.png",
-    "/images/cmp_logo/chetan.png",
+    "/images/cmp_logo/Disposafe.jfif",
+    "/images/cmp_logo/essel.jfif",
+    "/images/cmp_logo/PinkCity.jfif",
+    "/images/cmp_logo/KEC_Int.png",
+    "/images/cmp_logo/KMC.png",
+    "/images/cmp_logo/L&T.png",
+    "/images/cmp_logo/NCC_Ltd.png",
+    "/images/cmp_logo/Sadbhav.png",
+    "/images/cmp_logo/Suryapriya.png",
+   
   ];
 
   return (
@@ -35,7 +25,7 @@ export default function ClientsDetails() {
           {clients.map((logo, index) => (
             <div
               key={index}
-              className="flex h-[100px] items-center justify-center overflow-hidden rounded-[8px] border border-[#d6d6d6] bg-white p-2 shadow-sm sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[180px]"
+              className="flex h-[100px] items-center justify-center overflow-hidden rounded-[8px] border border-[#d6d6d6] bg-gray-200 p-2 shadow-sm sm:h-[120px] md:h-[140px] lg:h-[160px] xl:h-[180px]"
             >
               <img
                 src={logo}

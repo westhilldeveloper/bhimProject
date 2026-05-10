@@ -12,21 +12,25 @@ export default function Testimonials() {
       id: 1,
       name: 'Welspun',
       text: '“Bhim Secure Solutions has consistently delivered reliable manpower and housekeeping services. Their professionalism and quick response make them a valuable partner for our operations.”',
+      image:"/images/cmp_logo/cmk.png"
     },
     {
       id: 2,
       name: 'L&T IDPL',
       text: '“We appreciate the quality of workforce and the level of discipline maintained by the team. Their services have significantly improved our project efficiency.”',
+      image:"/images/cmp_logo/L&T.png"
     },
     {
       id: 3,
       name: 'KMC/ETA',
       text: '“The team provided by Bhim Secure Solutions is skilled, well-trained, and dependable. Their support has helped us maintain smooth and timely execution of our work.”',
+      image:"/images/cmp_logo/KMC.png"
     },
     {
       id: 4,
       name: 'Sadbhav Engineering Ltd.',
       text: '“From manpower supply to on-site support, their services have been exceptional. They understand our requirements well and always deliver beyond expectations.”',
+      image:"/images/cmp_logo/Sadbhav.png"
     },
   ];
 
@@ -66,27 +70,30 @@ export default function Testimonials() {
             className="flex transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {groupedSlides.map((group, idx) => (
-              <div key={idx} className="w-full shrink-0">
-                <div className="grid gap-8 lg:grid-cols-3">
-                  {group.map((item) => (
-                    <div
-                      key={item.id}
-                      className="rounded-[18px] bg-[#FFF6EB] px-6 py-8 shadow-sm"
-                    >
-                      <div className="mx-auto h-[88px] w-[88px] rounded-full bg-[#d7a544]" />
-                      <h3 className="mt-6 text-[22px] font-medium">{item.name}</h3>
-                      <p className="mx-auto mt-4 max-w-[260px] text-[12px] leading-5 text-[#555]">
-                        {item.text}
-                      </p>
-                      <div className="mt-8 text-[25px] tracking-[6px] text-[#d7a544]">
-                        ★★★★<span className="text-[#cfcfcf]">★</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+           {groupedSlides.map((group, idx) => (
+  <div key={idx} className="w-full shrink-0">
+    <div className="grid gap-8 lg:grid-cols-3">
+      {group.map((item) => (
+        <div
+          key={item.id}
+          className="rounded-[18px] bg-[#FFF6EB] px-6 py-8 shadow-sm"
+        >
+          <div className="mx-auto h-[108px] w-[148px] overflow-hidden rounded-md bg-[#d7a544]">
+            <img 
+              src={item.image} 
+              alt={item.name} 
+              className="h-full w-full object-fill"
+            />
+          </div>
+          <h3 className="mt-6 text-[22px] font-medium">{item.name}</h3>
+          <p className="mx-auto mt-4 max-w-[260px] text-[12px] leading-5 text-[#555]">
+            {item.text}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+))}
           </div>
         </div>
 
@@ -113,22 +120,25 @@ export default function Testimonials() {
 
       <div className="mt-10 overflow-x-auto scroll-smooth pb-4" style={{ scrollSnapType: 'x mandatory' }}>
         <div className="flex gap-6">
-          {testimonials.map((item) => (
-            <div
-              key={item.id}
-              className="min-w-[85vw] rounded-[18px] bg-[#FFF6EB] px-6 py-8 shadow-sm scroll-snap-align-start"
-              style={{ scrollSnapAlign: 'start' }}
-            >
-              <div className="mx-auto h-[88px] w-[88px] rounded-full bg-[#d7a544]" />
-              <h3 className="mt-6 text-[22px] font-medium">{item.name}</h3>
-              <p className="mx-auto mt-4 max-w-[260px] text-[12px] leading-5 text-[#555]">
-                {item.text}
-              </p>
-              <div className="mt-8 text-[25px] tracking-[6px] text-[#d7a544]">
-                ★★★★<span className="text-[#cfcfcf]">★</span>
-              </div>
-            </div>
-          ))}
+         {testimonials.map((item) => (
+  <div
+    key={item.id}
+    className="min-w-[85vw] rounded-[18px] bg-[#FFF6EB] px-6 py-8 shadow-sm scroll-snap-align-start"
+    style={{ scrollSnapAlign: 'start' }}
+  >
+    <div className="mx-auto h-auto w-[208px] overflow-hidden rounded-md bg-[#d7a544]">
+      <img 
+        src={item.image} 
+        alt={item.name} 
+        className="h-full w-full object-fill"
+      />
+    </div>
+    <h3 className="mt-6 text-[22px] font-medium">{item.name}</h3>
+    <p className="mx-auto mt-4 max-w-[260px] text-[12px] leading-5 text-[#555]">
+      {item.text}
+    </p>
+  </div>
+))}
         </div>
       </div>
     </section>

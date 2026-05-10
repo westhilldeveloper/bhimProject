@@ -74,7 +74,7 @@ export default function Footer() {
               { src: '/images/icons/Subtract.png', href: 'https://in.linkedin.com/company/bhimsecuresolutions', alt: 'LinkedIn' },
               { src: '/images/icons/insta.png', href: 'https://www.instagram.com/bhimsecure/', alt: 'Instagram' },
               { src: '/images/icons/fb.png', href: 'https://www.facebook.com/profile.php?id=61586873501701', alt: 'Facebook' },
-              { src: '/images/icons/youtube.png', href: 'https://www.facebook.com/profile.php?id=61586873501701', alt: 'Facebook' },
+              { src: '/images/icons/youtube.png', href: 'https://www.youtube.com/@BhimSecureSolutions', alt: 'Youtube' },
             ].map((item) => (
               <a
                 key={item.src}

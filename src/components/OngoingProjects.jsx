@@ -90,7 +90,7 @@ export default function OngoingProjects() {
                       {/* Points and logo - stack on mobile, side-by-side on tablet/desktop */}
                       <div className="mt-6 flex flex-col gap-5 md:mt-8 md:flex-row md:items-end md:justify-between lg:mt-12">
                         <ul className="space-y-2">
-                          {slide.points.map((point) => (
+                          {/* {slide.points.map((point) => (
                             <li
                               key={point}
                               className="flex items-center gap-2 text-[12px] font-medium text-black md:text-[16px]"
@@ -100,7 +100,7 @@ export default function OngoingProjects() {
                               </span>
                               <span>{point}</span>
                             </li>
-                          ))}
+                          ))} */}
                         </ul>
 
                         {/* Logo container - responsive width */}
