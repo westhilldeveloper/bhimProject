@@ -10,9 +10,9 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: 'Welspun',
+      name: 'Disposafe',
       text: '“Bhim Secure Solutions has consistently delivered reliable manpower and housekeeping services. Their professionalism and quick response make them a valuable partner for our operations.”',
-      image:"/images/cmp_logo/cmk.png"
+      image:"/images/cmp_logo/Disposafe.jfif"
     },
     {
       id: 2,
