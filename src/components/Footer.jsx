@@ -7,6 +7,8 @@ export default function Footer() {
     return item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`;
   };
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-[#5a4338] text-white">
       <div className="grid gap-10 px-4 py-10 sm:px-6 md:px-10 lg:grid-cols-[0.9fr_1.1fr_0.9fr] lg:px-12 lg:py-12">
@@ -91,15 +93,29 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="flex flex-col gap-3 border-t border-white/10 bg-[#3b2c25] px-4 py-4 text-[14px] text-[#f5ede2] sm:px-6 md:flex-row md:items-center md:justify-between md:px-10 lg:px-12 lg:text-[16px]">
-        <div>Copyright © 2023 All rights reserved.</div>
-        <div className="flex flex-wrap gap-4 sm:gap-6 lg:gap-8">
-          <Link href="/privacy-policy" className="cursor-pointer hover:underline">
-            Privacy Policy
-          </Link>
-          <Link href="/terms" className="cursor-pointer hover:underline">
-            Terms & Conditions
-          </Link>
+      <div className="border-t border-white/10 bg-[#3b2c25] px-4 py-4 text-[14px] text-[#f5ede2] sm:px-6 md:px-10 lg:px-12">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div>© {currentYear} Bhim Secure Solutions Pvt. Ltd. All rights reserved.</div>
+          <div className="flex flex-wrap gap-4 sm:gap-6 lg:gap-8">
+            <Link href="/privacy-policy" className="cursor-pointer hover:underline">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="cursor-pointer hover:underline">
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
+        {/* Additional block: Made by Mysterious Hero */}
+        <div className="mt-3 text-center text-xs text-gray-400 md:text-left">
+          Made by{' '}
+          <a
+            href="https://mysterioushero.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-yellow-400 hover:underline"
+          >
+            Mysterious Hero
+          </a>
         </div>
       </div>
     </footer>

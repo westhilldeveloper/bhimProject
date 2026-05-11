@@ -29,22 +29,22 @@ export const whychooseItems = [
   {
     title: "Experienced & Trusted Since 2009",
     description: "With years of proven experience, we have developed a deep understanding of various industries and their workforce requirements. Our long-standing presence reflects our commitment to consistency, reliability, and client satisfaction.",
-    image:'/images/circle/wchse1.png'
+    image:'/images/circle/wch4.png'
   },
   {
     title: "Skilled & Verified Workforce",
     description: "We ensure that every individual we deploy is properly trained, verified, and aligned with job requirements. This helps maintain high standards of service quality and ensures smooth operations for our clients.",
-    image:'/images/circle/wchse2.png'
+    image:'/images/circle/wche3.png'
   },
   {
     title: "Comprehensive Service Offering",
     description: "From housekeeping and security to construction labour and healthcare support, we provide a wide range of services under one roof. This makes us a one-stop solution for all your manpower and facility needs.",
-    image:'/images/circle/wche3.png'
+    image:'/images/circle/wchse2.png'
   },
   {
     title: "Client-Centric Approach",
     description: "We prioritize our clients’ needs and tailor our services accordingly. Our team works closely with you to understand your requirements and deliver solutions that are efficient, flexible, and result-driven.",
-    image:'/images/circle/wch4.png'
+    image:'/images/circle/wchse1.png'
   },
 ];
 
