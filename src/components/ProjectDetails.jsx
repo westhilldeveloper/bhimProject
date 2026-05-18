@@ -209,7 +209,7 @@ const project17 = {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 12000);
 
     return () => clearInterval(interval);
   }, [slides.length]);

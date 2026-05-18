@@ -62,7 +62,7 @@ export default function Header() {
     <header className="bg-white w-full">
       <div className="flex w-full items-center justify-between gap-4 px-4 py-3 md:px-6 lg:px-12">
         <div className="flex items-center gap-3">
-          <div className="flex h-[71px] w-[65px] items-center justify-center">
+          <div className="flex h-[101px] w-full items-center justify-center">
             <img src="/images/logo.jpg" alt="logo" className="h-full w-full object-contain" />
           </div>
         </div>

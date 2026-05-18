@@ -48,7 +48,7 @@ export default function TeamMembers() {
               key={`${slideIndex}-${member.id}`}
               className="w-full max-w-md rounded-[12px] bg-[#FFF6EB] p-[10px]"
             >
-              <div className="flex h-[400px] w-full items-center justify-center rounded-[8px] bg-[#F7F7F7] overflow-hidden">
+              <div className="flex h-[350px] w-full md:h-[400px] items-center justify-center rounded-[8px] bg-[#F7F7F7] overflow-hidden">
                 <img
                   src={member.image}
                   alt="team member"

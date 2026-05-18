@@ -6,22 +6,22 @@ export const processItems = [
   {
     title: "Requirement Understanding",
     description: "We analyze your exact workforce and service needs to ensure the right fit.",
-    image:'/images/circle/wrkflw1.png'
+    image:'/images/circle/requirement.png'
   },
   {
     title: "Talent Selection",
     description: "We source, screen, and deploy skilled and reliable professionals.",
-    image:'/images/circle/wrkflw2.png'
+    image:'/images/circle/talent.png'
   },
   {
     title: "Training & Deployment",
     description: "Our team is trained and quickly deployed for seamless operations.",
-    image:'/images/circle/wrkfl3.png'
+    image:'/images/circle/trainning.png'
   },
   {
     title: "Ongoing Support",
     description: "We provide continuous supervision and support to maintain service quality.",
-    image:'/images/circle/wrkflw4.png'
+    image:'/images/circle/Ongoing.png'
   },
 ];
 

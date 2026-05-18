@@ -30,7 +30,7 @@ export default function ServiceDetailsPage() {
     subtitle: 'Our pantry staff services ensure smooth and efficient management of your workplace pantry and refreshment areas. Our staff is trained to maintain hygiene, manage supplies, and provide courteous service to employees and guests.',
     description: 'By taking care of these essential tasks, we help create a comfortable and well-organized environment within your workplace. Our pantry personnel are reliable and professional, contributing to a better overall experience.',
     points: ['Project Management', 'Quality Assurance', 'Staff Training'], 
-    image:'/images/service/Pantry_Services.png'
+    image:'/images/service/Pantry_Staff.png'
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export default function ServiceDetailsPage() {
     subtitle: 'Our doctor attendants are trained to assist medical professionals and support patients during consultations and treatments. They help in managing patient needs, maintaining hygiene, and ensuring smooth coordination within healthcare environments.',
     description: 'With a focus on care and professionalism, our doctor attendants contribute to a comfortable and efficient healthcare experience. Their presence ensures that both patients and doctors receive the support they need for better outcomes.',
     points: ['Project Management', 'Quality Assurance', 'Staff Training'],
-    image:'/images/service/Doctor_Attendant.png' 
+    image:'/images/service/DoctorAttendant.png' 
   },
 ];
 
@@ -85,57 +85,48 @@ export default function ServiceDetailsPage() {
         </div>
 
         {/* Service Blocks */}
-        <div className="mt-10 space-y-10 md:mt-12 md:space-y-14">
+         <div className="mt-10 space-y-10 md:mt-12 md:space-y-14">
           {services.map((service, index) => {
-            const reverse = index % 2 === 1;
+            // Even index (0,2,4...): on desktop image on left, content on right
+            const isEven = index % 2 === 0;
 
             return (
               <div
-  key={service.id}
-  className={`grid items-start gap-8 md:gap-10 lg:grid-cols-2 ${
-    reverse
-      ? 'lg:[&>*:first-child]:order-2 lg:[&>*:last-child]:order-1'
-      : ''
-  }`}
->
-  {/* Image */}
-  <div className="w-full">
-    <div className="h-[260px] w-full overflow-hidden rounded-[8px] bg-[#fff6eb] md:h-[320px] lg:h-[576px]">
-      <img
-        src={service.image} 
-        alt="service"
-        className="h-full w-full object-cover"
-      />
-    </div>
-  </div>
+                key={service.id}
+                className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-8 md:gap-10"
+              >
+                {/* Content (title, subtitle, description) - appears first on mobile */}
+                <div
+                  className={`w-full ${
+                    isEven ? 'lg:order-2' : 'lg:order-1'
+                  }`}
+                >
+                  <h3 className="text-[18px] font-medium leading-none text-black md:text-[28px] lg:text-[22px]">
+                    {service.title}
+                  </h3>
+                  <p className="mt-6 text-[12px] leading-[1.5] text-[#4c4c4c] md:text-[14px]">
+                    {service.subtitle}
+                  </p>
+                  <p className="mt-1 text-[12px] leading-[1.5] text-[#4c4c4c] md:text-[14px]">
+                    {service.description}
+                  </p>
+                </div>
 
-  {/* Content */}
-  <div className="w-full">
-    <h3 className="text-[18px] font-medium leading-none text-black md:text-[28px] lg:text-[22px]">
-      {service.title}
-    </h3>
-
-     <p className="mt-6 text-[12px] leading-[1.5] text-[#4c4c4c] md:text-[14px]">
-      {service.subtitle}
-    </p>
-
-    <p className="mt-1 text-[12px] leading-[1.5] text-[#4c4c4c] md:text-[14px]">
-      {service.description}
-    </p>
-
-    {/* <ul className="mt-5 space-y-2">
-      {service.points.map((point) => (
-        <li
-          key={point}
-          className="flex items-center gap-2 text-[12px] font-medium text-black md:text-[16px]"
-        >
-          <span className="h-[5px] w-[5px] rounded-full bg-black" />
-          <span>{point}</span>
-        </li>
-      ))}
-    </ul> */}
-  </div>
-</div>
+                {/* Image - appears after content on mobile */}
+                <div
+                  className={`w-full ${
+                    isEven ? 'lg:order-1' : 'lg:order-2'
+                  } mt-6 lg:mt-0`}
+                >
+                  <div className="h-[260px] w-full overflow-hidden rounded-[8px] bg-[#fff6eb] md:h-[320px] lg:h-[576px]">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
             );
           })}
         </div>

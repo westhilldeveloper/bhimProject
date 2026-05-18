@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <div className="min-h-screen bg-[#FFFFFF] text-[#161616]">
           <div className="mx-auto max-w-full bg-[#e7e4e1]">
