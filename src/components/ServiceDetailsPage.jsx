@@ -30,7 +30,7 @@ export default function ServiceDetailsPage() {
     subtitle: 'Our pantry staff services ensure smooth and efficient management of your workplace pantry and refreshment areas. Our staff is trained to maintain hygiene, manage supplies, and provide courteous service to employees and guests.',
     description: 'By taking care of these essential tasks, we help create a comfortable and well-organized environment within your workplace. Our pantry personnel are reliable and professional, contributing to a better overall experience.',
     points: ['Project Management', 'Quality Assurance', 'Staff Training'], 
-    image:'/images/service/Pantry_Staff.png'
+    image:'/images/service/Pantry_staff.png'
   },
   {
     id: 5,
