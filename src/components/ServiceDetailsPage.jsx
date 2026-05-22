@@ -103,7 +103,7 @@ export default function ServiceDetailsPage() {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-fill"
                   />
                 </div>
               </div>
