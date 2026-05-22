@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useMemo } from 'react';
+import Image from 'next/image';
 
 export default function ProjectDetails() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,7 +24,7 @@ export default function ProjectDetails() {
      subtitle:'We provided 40 skilled manpower resources for this expressway project in Haryana between November 2018 and May 2020. The workforce supported construction and operational tasks with precision and consistency.',
      description:'Our team ensured smooth execution by maintaining discipline and efficiency. This project strengthened our expertise in handling expressway infrastructure projects with professionalism.',
      points: ['Project Management', 'Candidate Management', 'Interview Management'],
-     image:'/images/project/cons1.jpg',
+     image:'/images/project/cons8.jpg',
      image1:'/images/project/cons5.jpg',
      image2:'/images/project/cons6.jpg',
      image3:'/images/project/cons7.jpg',
@@ -263,11 +264,15 @@ const project17 = {
                     </ul> */}
 
                   {slide.logo &&   <div className="flex h-[72px] w-[170px] items-center justify-center rounded-[6px] bg-[#ececec] text-[11px] text-[#7a7a7a] md:h-[84px] md:w-[200px]">
-                     <img
-    src={slide.logo}
-    alt="ongoing project"
-    className="h-full w-full object-fit"
-  />
+                     <Image
+  src={slide.logo}
+  alt="project"
+  width={800}
+  height={600}
+  className="h-full w-full object-fill"
+  loading="lazy"          // lazy-load off-screen images
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
                     </div>}
                   </div>
                 </div>
@@ -276,38 +281,54 @@ const project17 = {
                 <div className="mt-8 grid grid-cols-1 gap-[10px] lg:grid-cols-12 lg:gap-[10px]">
   {/* Top left */}
   <div className="flex h-[220px] overflow-hidden rounded-[10px] bg-[#fff6eb] lg:col-span-4 lg:h-[390px]">
-    <img
-      src={slide.image}
-      alt="project"
-      className="h-full w-full object-cover"
-    />
+    <Image
+  src={slide.image}
+  alt="project"
+  width={800}
+  height={600}
+  className="h-full w-full object-cover"
+  loading="lazy"          // lazy-load off-screen images
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
   </div>
 
   {/* Top middle */}
   <div className="flex h-[220px] overflow-hidden rounded-[10px] bg-[#fff6eb] lg:col-span-4 lg:h-[390px]">
-    <img
-      src={slide.image1}
-      alt="project"
-      className="h-full w-full object-cover"
-    />
+    <Image
+  src={slide.image1}
+  alt="project"
+  width={800}
+  height={600}
+  className="h-full w-full object-cover"
+  loading="lazy"          // lazy-load off-screen images
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
   </div>
 
   {/* Right tall */}
   <div className="flex h-[260px] overflow-hidden rounded-[10px] bg-[#fff6eb] lg:col-span-4 lg:row-span-2 lg:h-[673px]">
-    <img
-      src={slide.image2}
-      alt="project"
-      className="h-full w-full object-cover"
-    />
+    <Image
+  src={slide.image2}
+  alt="project"
+  width={800}
+  height={600}
+  className="h-full w-full object-cover"
+  loading="lazy"          // lazy-load off-screen images
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
   </div>
 
   {/* Bottom wide */}
   <div className="flex h-[220px] overflow-hidden rounded-[10px] bg-[#fff6eb] lg:col-span-8 lg:h-[273px]">
-    <img
-      src={slide.image3}
-      alt="project"
-      className="h-full w-full object-cover"
-    />
+    <Image
+  src={slide.image3}
+  alt="project"
+  width={800}
+  height={600}
+  className="h-full w-full object-cover"
+  loading="lazy"          // lazy-load off-screen images
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
   </div>
 </div>
               </div>
