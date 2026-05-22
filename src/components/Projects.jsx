@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { projectLarge, projectSmall } from '@/data';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -67,7 +68,7 @@ export default function Projects() {
           id: 2,
           title: 'PinkCity Expressway Pvt. Ltd. (Daulatpura Toll)',
           description: 'We deployed 30 manpower personnel for this toll project in Rajasthan. Our team handled operational tasks with precision and efficiency. Despite the smaller workforce, we ensured high-quality service delivery. This project reflects our flexibility in handling projects of all sizes.',
-           image:'/images/project/cons1.jpg' ,
+           image:'/images/project/cons9.jpg' ,
         },
       ],
     },
@@ -121,11 +122,16 @@ export default function Projects() {
               <div className="grid gap-6 lg:grid-cols-[1fr_0.96fr] lg:gap-8">
                 {/* LEFT SIDE: fixed image height */}
                 <div className="overflow-hidden rounded-[18px] bg-[#FFF6EB] text-left shadow-sm">
-                  <img
-                    src={slide.image}
-                    alt="project"
-                    className="h-[600px] w-full object-cover"   // FIXED HEIGHT
-                  />
+                  <Image
+  src={slide.image}
+  alt="project"
+  width={1200}          // adjust based on your image's natural width
+  height={600}          // matches the fixed height
+  className="object-cover"
+  style={{ height: '600px', width: '100%' }}
+  loading="lazy"
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
                   <div className="bg-[#FFF6EB] px-5 py-5 sm:px-6">
                     <h3 className="text-[22px] font-medium sm:text-[24px]">
                       {slide.title}
@@ -148,11 +154,17 @@ export default function Projects() {
                       key={item.id}
                       className="overflow-hidden rounded-[18px] bg-[#efe6da] text-left shadow-sm"
                     >
-                      <img
-                        src={item.image}
-                        alt="project"
-                        className="h-[260px] w-full object-cover"   // FIXED HEIGHT
-                      />
+                     
+<Image
+  src={item.image}
+  alt="project"
+  width={800}           // adjust to your image's natural width (or a reasonable max)
+  height={260}          // matches the fixed height
+  className="object-cover"
+  style={{ height: '260px', width: '100%' }}
+  loading="lazy"
+  sizes="(max-width: 768px) 100vw, 50vw"
+/>
                       <div className="flex flex-col gap-4 bg-[#FFF6EB] px-5 py-5 sm:px-6 md:flex-row md:items-center md:justify-between">
                         <div>
                           <h3 className="text-[22px] font-medium sm:text-[24px]">
