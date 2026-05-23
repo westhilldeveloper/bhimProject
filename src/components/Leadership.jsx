@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Leadership({ slides = [] }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -29,9 +30,9 @@ export default function Leadership({ slides = [] }) {
         name: 'Kamal Basumatari',
         designation: `General Manager – Head of Sales & Operations\nVertical: Facility Management & Construction`,
         paragraphs: [
-          "“At Bhim Secure Solutions, our goal has always been to deliver dependable manpower and facility management services that create real value for our clients. We understand that every project requires not only skilled manpower but also commitment, discipline, and operational excellence. Our team works tirelessly to ensure that we meet the expectations of our clients while maintaining the highest standards of professionalism and service quality.”",
-          "“With years of experience in the facility management and construction sector, we have built a strong foundation based on trust, consistency, and long-term partnerships. We believe in understanding the unique requirements of every client and providing customized solutions that support smooth operations and project success. Our focus remains on continuous improvement, workforce development, and maintaining operational efficiency across every assignment we undertake.”",
-          "“As we continue to grow, our commitment remains unchanged, to provide reliable services, strengthen client relationships, and contribute to the success of every project we are associated with. We are proud of the trust our clients place in us and remain dedicated to delivering excellence through teamwork, innovation, and a customer-first approach.”"
+          "Mr. Kamal Basumatari is a seasoned industry professional with over 20 years of extensive experience in manpower staffing across multiple domains and industry verticals. His expertise spans Facility Management, Construction Manpower, and workforce solutions for diverse projects and operational sites.",
+          "As a visionary entrepreneur and pioneer in the staffing industry, he has successfully established and led organizations such as Apto Global Solution Private Limited, Aamdhane Private Limited, and Bhim Secure Solutions Private Limited. Through his strategic leadership, operational expertise, and deep understanding of workforce management, he has played a significant role in delivering reliable and scalable manpower solutions to businesses across sectors.",
+          "Under his leadership, Bhim Secure Solutions Private Limited is continuously evolving as a trusted partner for organizations seeking efficient manpower support and seamless compliance management. His mission is to help companies focus on growth and operational excellence while reducing the burden of complex compliance and workforce administration processes."
         ]
       }; 
     }
@@ -93,11 +94,14 @@ export default function Leadership({ slides = [] }) {
                     key={idx}
                     className="flex w-full max-w-sm flex-col rounded-[18px] bg-white p-4 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1"
                   >
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="aspect-square w-full rounded-[16px] object-cover"
-                    />
+                   <Image
+  src={service.image}
+  alt={service.title}
+  width={400}   // any value, aspect ratio will be preserved
+  height={400}  // must equal width to keep square
+  className="aspect-square w-full rounded-[16px] object-cover"
+  style={{ objectPosition: '100% -40px' }}
+/>
                     <h3 className="mt-5 text-[20px] font-medium sm:text-[22px]">
                       {service.title}
                     </h3>

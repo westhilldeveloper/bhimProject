@@ -13,7 +13,7 @@ export default function TeamMembers() {
       designation: 'Team Members',
       description:
         '',
-        image:'/images/members/membrs.jpeg'
+        image:'/images/members/group.jpeg'
     },
    
   ];
@@ -45,29 +45,29 @@ export default function TeamMembers() {
         <div className="flex justify-center">
           {slide.map((member) => (
             <div
-              key={`${slideIndex}-${member.id}`}
-              className="w-full max-w-md rounded-[12px] bg-[#FFF6EB] p-[10px]"
-            >
-              <div className="flex h-[350px] w-full md:h-[400px] items-center justify-center rounded-[8px] bg-[#F7F7F7] overflow-hidden">
-                <img
-                  src={member.image}
-                  alt="team member"
-                  className="h-full w-full object-fill"
-                />
-              </div>
+  key={`${slideIndex}-${member.id}`}
+  className="w-full max-w-lg rounded-[12px] bg-[#FFF6EB] p-[10px]"
+>
+  <div className="flex h-[350px] w-full md:h-[400px] items-center justify-center rounded-[8px] bg-[#F7F7F7] overflow-hidden">
+    <img
+      src={member.image}
+      alt="team member"
+      className="h-full w-full object-fill"
+    />
+  </div>
 
-              <div className="px-8 pb-4 pt-8">
-                <h3 className="text-[22px] font-medium leading-none text-black">
-                  {member.name}
-                </h3>
+  <div className="px-8 pb-4 pt-8">
+    <h3 className="text-[22px] font-medium leading-none text-black">
+      {member.name}
+    </h3>
 
-                <p className="mt-2 text-[12px] text-[#333]">{member.designation}</p>
+    <p className="mt-2 text-[12px] text-[#333]">{member.designation}</p>
 
-                <p className="mx-auto mt-5 max-w-full text-[12px] leading-[1.45] text-[#555]">
-                  {member.description}
-                </p>
-              </div>
-            </div>
+    <p className="mx-auto mt-5 max-w-full text-[12px] leading-[1.45] text-[#555]">
+      {member.description}
+    </p>
+  </div>
+</div>
           ))}
         </div>
       </div>

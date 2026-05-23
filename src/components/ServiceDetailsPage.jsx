@@ -14,7 +14,7 @@ export default function ServiceDetailsPage() {
       subtitle: 'Our construction manpower services are designed to meet the dynamic and demanding needs of the construction industry. We provide skilled, semi-skilled, and unskilled labour who are experienced in handling various types of construction work efficiently and safely.',
       description: 'We understand the importance of timely project completion, which is why we ensure a steady supply of reliable manpower. Our workforce is selected carefully to match your project requirements, helping you maintain productivity and reduce operational delays.',
       points: ['Project Management', 'Quality Assurance', 'Staff Training'],
-      image:'/images/service/construction.png'
+      image:'/images/service/construction_2.png'
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export default function ServiceDetailsPage() {
       subtitle: 'We provide general helper staff to support various operational tasks across industries. Whether it’s assisting in daily activities, handling materials, or supporting skilled workers, our helpers are dependable and hardworking.',
       description: 'Our helper services are flexible and can be customized based on your business needs. This ensures that your operations run smoothly without any interruptions or workforce shortages.',
       points: ['Project Management', 'Quality Assurance', 'Staff Training'],
-      image:'/images/service/helpers.png'
+      image:'/images/service/helper_2.png'
     },
     {
       id: 6,

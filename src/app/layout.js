@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <div className="mx-auto max-w-full bg-[#e7e4e1]">
             <Header />
             <img
-                         src="/images/Hero_Banner.jpg"
+                         src="/images/hero.jpeg"
                          alt="about"
                          className="h-2/3 w-full "
                        />

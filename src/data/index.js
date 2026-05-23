@@ -82,7 +82,7 @@ const servicesData = [
       description: "We provide professional housekeeping staff to maintain cleanliness, hygiene, and a well-organized environment in corporate spaces, ensuring a positive and productive workplace for employees and visitors."
     },
     {
-      image: "/images/service/construction.png",
+      image: "/images/service/construction_2.png",
       title: "Construction Manpower / Labour Supply",
       description: "Our skilled and unskilled workforce supports construction projects of all sizes, helping ensure timely completion, operational efficiency, and adherence to industry standards."
     },
@@ -101,7 +101,7 @@ const servicesData = [
       description: "Our pantry staff efficiently manage food and beverage services, maintaining hygiene and timely service to enhance workplace comfort and convenience."
     },
     {
-      image: "/images/service/helpers.png",
+      image: "/images/service/helper_2.png",
       title: "Helper Services",
       description: "We provide reliable helpers to assist in daily operational tasks across various industries, improving efficiency and reducing workload on core teams."
     },
