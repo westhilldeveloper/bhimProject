@@ -92,14 +92,14 @@ export default function Leadership({ slides = [] }) {
                 {slide.map((service, idx) => (
                   <div
                     key={idx}
-                    className="flex w-full max-w-sm flex-col rounded-[18px] bg-white p-4 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1"
+                    className="flex w-full max-w-sm flex-col rounded-[18px] bg-white p-4 text-center shadow-sm transition-transform duration-300 hover:-translate-y-1 "
                   >
                    <Image
   src={service.image}
   alt={service.title}
   width={400}   // any value, aspect ratio will be preserved
   height={400}  // must equal width to keep square
-  className="aspect-square w-full rounded-[16px] object-cover"
+  className="aspect-square w-full rounded-[16px] object-cover "
   style={{ objectPosition: '100% -40px' }}
 />
                     <h3 className="mt-5 text-[20px] font-medium sm:text-[22px]">
@@ -110,7 +110,7 @@ export default function Leadership({ slides = [] }) {
                     </p>
                     <button
                       onClick={() => openModal(service, idx)}
-                      className="mt-8 w-full rounded-full border border-[#765640] px-6 py-3 text-[14px] font-medium transition-colors hover:bg-[#f4eee5] sm:text-[15px] md:text-[16px]"
+                      className="mt-8 w-full rounded-full border border-amber-400 text-amber-400 px-6 py-3 text-[14px] font-medium transition-colors hover:bg-[#f4eee5] sm:text-[15px] md:text-[16px]"
                     >
                       Read More →
                     </button>
@@ -165,11 +165,14 @@ export default function Leadership({ slides = [] }) {
 
             {/* Modal content */}
             <div className="flex flex-col items-center text-center">
-              <img
-                src={selectedMember.image}
-                alt={selectedMember.name}
-                className="mb-4 h-48 w-48 rounded-full object-cover shadow-md"
-              />
+              
+              <Image
+  src={selectedMember.image}
+  alt={selectedMember.name}
+  width={192}   
+  height={192}
+   className="mb-4 rounded-full object-cover shadow-md ring-2 ring-amber-400 ring-offset-2 ring-offset-white "
+/>
               <h3 className="text-2xl font-semibold text-[#333]">
                 {selectedMember.name}
               </h3>

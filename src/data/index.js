@@ -118,9 +118,9 @@ const servicesData = [
       description: "We offer trained nursing assistants to support patient care, assisting with daily medical needs and ensuring comfort and proper attention in healthcare settings."
     },
     {
-      image: "/images/service/DoctorAttendant.png",
+      image: "/images/service/Doctor.png",
       title: "Doctor Attendant Services",
-      description: "POur doctor attendants provide essential support to medical professionals, helping manage patient coordination and routine assistance for smooth healthcare operations."
+      description: "Our doctor attendants provide essential support to medical professionals, helping manage patient coordination and routine assistance for smooth healthcare operations."
     },
     // {
     //   image: "/images/pantry.jpg",
