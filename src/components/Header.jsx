@@ -62,17 +62,17 @@ export default function Header() {
     <header className="bg-white w-full">
       <div className="flex w-full items-center justify-between gap-4 px-4 py-3 md:px-6 lg:px-12">
         <div className="flex items-center gap-3">
-  <div className="flex h-[101px] items-center justify-center gap-3">
-    <img src="/images/logo.jpg" alt="logo" className="h-full w-auto object-contain" />
-    <span className="inline-block border border-amber-300 bg-amber-50 px-3 py-1 rounded-md text-center">
-      <span className="text-[12px] font-semibold text-gray-800 drop-shadow-[0_0_4px_rgba(251,191,36,0.8)] block">
-        Bhim Secure Solutions Private Limited
-      </span>
-      <span className="text-[9px] text-gray-600 block mt-0.5">
-        (A company of Bheema Group)
-      </span>
+  <div className="flex flex-col items-center justify-center gap-2 text-center">
+  <img src="/images/logos.png" alt="logo" className="h-18 w-auto object-contain" />
+  <div className="border border-amber-300 bg-amber-50 px-4 py-1 rounded-md">
+    <span className="text-[12px] font-semibold text-gray-800 drop-shadow-[0_0_4px_rgba(251,191,36,0.8)] block">
+      Bhim Secure Solutions Private Limited
+    </span>
+    <span className="text-[9px] text-gray-600 block mt-0.5">
+      (A Company of Bheema Group)
     </span>
   </div>
+</div>
 </div>
 
         <div className="flex items-center gap-12">
