@@ -114,7 +114,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-yellow-400 hover:underline"
           >
-            Mysterious Hero
+            Mysterious Hero Studio
           </a>
         </div>
       </div>
